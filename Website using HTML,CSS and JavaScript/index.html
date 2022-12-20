@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="topbar">
+        <div class="toplog">
+            <img src="images/logo1.jpg" alt="amazon logo">
+        </div>
+
+        <div class="theme-switch">
+            <div class="switch"></div>
+        </div> 
+        
+        <nav class="navbar">
+            <a href="#">Shopping</a>
+            <a href="#">Prime Subscription</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    
+    </div>
+    
+    <section>
+    
+    <div class="container">
+        <h1>Amazon Website including crousel.</h1>
+        
+        <div class="carousel">
+
+            <div class="buttons">
+                <div class="move_button" onclick="prevSlide();"><i class="fa-solid fa-angle-left"></i>
+                 </div>
+
+                <div class="move_button" onclick="nextSlide();"><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+
+           <div class="indicators">
+
+            <p onclick="movetoSlide(1)"></p>
+            <p onclick="movetoSlide(2)"></p>
+            <p onclick="movetoSlide(3)"></p>
+            <p onclick="movetoSlide(4)"></p>
+            <p onclick="movetoSlide(5)"></p>
+           </div>
+
+            <div class="slider">
+                <div class="slider_child">
+                    <img src="images/analog4.png" alt="Amazon" width="1000px" height="450px">
+                </div>
+
+                <div class="slider_child">
+                    <img src="images/amalog.png" alt="Amazon" width="1000px" height="450px">
+                </div>
+                
+                <div class="slider_child">
+                    <img src="images/analog2.jpg" alt="Amazon" width="1000px" height="450px">
+                </div>
+                
+                <div class="slider_child">
+                    <img src="images/amalog5.png" alt="Amazon" width="1000px" height="450px">
+                </div>
+                
+                <div class="slider_child">
+                    <img src="images/analog3.png" alt="Amazon" width="1000px" height="450px">
+                </div>
+                
+                <div class="slider_child">
+                    <img src="images/analog4.png" alt="Amazon" width="1000px" height="450px">
+                </div>
+                
+                <div class="slider_child">
+                    <img src="images/amalog.png" alt="Amazon" width="1000px" height="450px">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+    <div class="textarea">
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium hic suscipit, quaerat illum est culpa dignissimos temporibus ratione alias, libero neque. Facere eos molestiae adipisci provident necessitatibus a nihil ratione!</p>
+        
+        <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio placeat unde sequi doloremque atque quod dicta iusto tenetur ex, omnis, suscipit temporibus voluptatum itaque ut sint fuga debitis dolores ad.</p>
+        
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, voluptas iure quas corrupti ipsum libero recusandae assumenda ullam eaque repudiandae dicta, similique aperiam qui illo saepe sint tempore officiis incidunt.</p>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure maxime dolorem non rem voluptate molestias quo, voluptas rerum amet beatae facilis, quae exercitationem necessitatibus perspiciatis voluptates at sint ipsa. Numquam?</p>
+        
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur tenetur temporibus dolore obcaecati quasi, voluptatem corporis aliquam tempora ratione commodi illum iusto accusantium facilis eum, mollitia laudantium, odit cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit et inventore a eos corporis voluptates voluptatibus, assumenda dignissimos eveniet reprehenderit nostrum, officiis deserunt qui iure saepe consequatur quam eius laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque atque dolor doloribus sint eveniet quos reprehenderit sed laudantium, labore blanditiis aperiam nulla culpa beatae facere quia aliquam accusantium amet neque.</p>
+        
+        <p>Lorem ipsum dolor sit 
+            amet consectetur, adipisicing elit. Omnis vero voluptatum similique illum cum, natus dignissimos adipisci quaerat officia, rem accusamus recusandae ipsa nesciunt id sed culpa quia non Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ab veritatis fuga magni recusandae sed, perferendis ipsum esse non rem odit cum commodi pariatur earum ratione cupiditate incidunt, culpa nam?</p> 
+        
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet voluptas voluptatum quos commodi. Ullam fugit consequuntur alias culpa temporibus, debitis tenetur, expedita obcaecati amet dolores deserunt, exercitationem praesentium nemo deleniti!</p>
+    </div>
+
+</section>
+
+<aside>
+    <h3>Amazon Websites</h3>
+        
+    <div class="sidebar">
+            <img class="logo" src="images/amashop.jpg" alt="logo1" title="Amazon Shopping">
+            <h4> Amazon Shopping</h4>
+    </div>
+
+    <div class="sidebar">   
+            <img class="logo" src="images/primelog.jpg" alt="Amazon Prime" title="LOGO 2">
+            <h4>Amazon Prime</h4>        
+    </div> 
+
+    <div class="sidebar">
+            <img class="logo" src="images/amafrelog.jpg" alt="Amazon Fresh" title="LOGO 3">
+            <h4>Amazon Fresh</h4>
+    </div>
+
+</aside>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="main.js">
+
+</script>
+</body>
+</html>

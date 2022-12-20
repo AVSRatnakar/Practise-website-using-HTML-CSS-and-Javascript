@@ -1,0 +1,236 @@
+:root {
+    --background: #fff;
+    --text: #000;
+    --highlight: #fb9701;
+}
+
+body{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--background);
+    color : var(--text);          
+    box-sizing: border-box;
+}
+
+.theme-switch {
+    --background: #fff;
+    --text: #000;
+    color: var(--background);
+    width: 70px;
+    height: 30px;
+    background-color: var(--text);
+    border-radius: 50px;
+    position: absolute;
+    top: 30px;
+    left: 733px;
+}
+
+.theme-switch .switch {
+    background: white;
+    width: 24px;
+    height: 24px;
+    background: var(--highlight);
+    border-radius: 100%;
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    transition: 0.5s all ease;
+    display: inline;
+}
+
+.dark-theme {
+    --background: #000;
+    --text: #fff;
+    background: var(--background);
+}
+
+.dark-theme .theme-switch {
+    background: var(--background);
+}
+
+.dark-theme .theme-switch .switch {
+    transform: translateX(37px);
+}
+
+.dark-theme a {
+    color: var(--text);
+}
+
+.carousel{
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    width: 600%;
+    display: flex;
+    margin-left: -100%;
+}
+
+.buttons {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: 225px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.move_button {
+    width: 50px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.silder_child {
+    width: calc(100%/6);
+}
+
+.indicators {
+
+    width: 100%;
+    height: 15px;
+    position: absolute;
+    bottom: 20px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    column-gap: 5px;
+}
+
+.indicators>p {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 50%;
+}
+
+.indicators>p:hover{
+    cursor: pointer;
+}
+/* .indicators p.active{
+    scale: 1.2;
+    border: #aaa;
+    background-color: rgb(251,151,1);
+} */
+
+.container {
+    text-align: center;
+    border-radius: 8px;
+   
+}
+
+.toplog {
+    display: inline-block;
+    padding: 16px;
+    margin-right: 18px;
+    margin-left: 24px;
+}
+
+.topbar {
+    background-color: rgb(251,151,1);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.topbar nav a {
+    display: inline-block;
+    border: 2px solid var(--background);
+    padding: 8px;
+    margin-left: 15px;
+    color : var(--background);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar{
+    padding: 24px;
+    float: right;
+}
+
+.topbar nav a:hover {
+    background-color: var(--background);
+    border: 2px solid rgb(251,151,1);
+    font-weight: bold;
+    color: rgb(251,151,1);
+    box-shadow: 4px 4px 10px black;
+}
+
+.textarea {
+    margin: 25px;
+    font-size: 32px;
+}
+
+.textarea p::first-letter {
+    color: rgb(251,151,1);
+    font-size: 40px;
+}
+
+section {
+    display: inline-block;
+    width: 1000px;
+    margin-right: 3%;
+    margin-left: 1.5%;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 15px #aaa;
+    padding-bottom: 16px;
+    /* border: 2px solid var(--text); */
+    border-radius: 8px;
+}
+
+aside {
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+    margin-top: 32px;
+    box-sizing: border-box;
+    padding: 16px;
+    /* border: 2px solid var(--text); */
+    border-radius: 8px;
+    box-shadow: 0px 3px 15px #aaa;
+    text-align: center;
+}
+
+aside h3 {
+    color: rgb(251,151,1);
+}
+
+.sidebar {
+    border-bottom: 2px solid var(--text);
+    margin-bottom: 18px;
+}
+
+.sidebar:last-of-type {
+    border-bottom: 0px;
+    margin-bottom: 0%;
+}
+
+.logo {
+    width: 100%;
+    height:200px;
+    border: 2px solid var(--text);
+}
+
+.logo:hover {
+    cursor: pointer;
+    scale: 1.05;
+    box-shadow: 2px 2px 15px #aaa;
+}
+
+.textarea p::selection {
+    background-color: var(--text);
+    color: rgb(251,151,1);
+}
